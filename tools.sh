@@ -9,5 +9,7 @@ case "$1" in
         chmod +x ./chsrc
         ./chsrc set pip first
         ./chsrc set debian first
-        git clone git@github.com:jesongit/nav.git .
+        git clone git@github.com:jesongit/nav.git .;;
+    "init2")
+        git clone git@github.com:jesongit/nav.git .;;
 esac

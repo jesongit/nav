@@ -3,7 +3,7 @@ WORKDIR /workdir
 ENV TZ=Asia/Shanghai
 
 COPY tools.sh .
-RUN bash tools.sh init
+RUN bash tools.sh init2
 
 EXPOSE 8080
 CMD ["bash","tools.sh"]
