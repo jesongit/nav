@@ -1,17 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import json
-import time
-
 import requests
 
-LINKS = []
+
+def get_config():
+    proxies = {
+        # 'http': 'http://127.0.0.1:7890',
+        # 'https': 'http://127.0.0.1:7890',
+    }
+    response = requests.get('https://raw.githubusercontent.com/jesongit/nav/master/config.json', proxies=proxies)
+    return json.loads(response.text)
 
 
-def refresh_config():
-    global LINKS
-    while True:
-        response = requests.get('https://example.com/config.json')
-        data = json.loads(response.text)
-        LINKS = [(item['key'], item['name'], item['link']) for item in data['links']]
-        time.sleep(60)
+def search_link():
+    pass
