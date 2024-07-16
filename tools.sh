@@ -1,5 +1,5 @@
 #!/bin/sh
-case $1 of
+case $1 in
     "start")
         cd /app
         pip install -r requirements.txt
