@@ -2,8 +2,13 @@
   "links": [
     {
       "key": "bkblog",
-      "name": "个人博客",
+      "name": "博客",
       "link": "https://www.posase.im"
+    },
+    {
+      "key": "bky",
+      "name": "博客园",
+      "link": "https://cnblogs.com/posase"
     },
     {
       "key": "portainer",
@@ -11,14 +16,14 @@
       "link": "https://portainer.jeson.im:100/"
     },
     {
-      "key": "npm",
-      "name": "npm(LA)",
-      "link": "https://npm.posase.net"
-    },
-    {
-      "key": "npm",
+      "key": "npm1",
       "name": "npm",
       "link": "https://npm.jeson.im:100"
+    },
+    {
+      "key": "npm2",
+      "name": "npm(LA)",
+      "link": "https://npm.posase.net"
     },
     {
       "key": "emby",
@@ -29,6 +34,61 @@
       "key": "immich",
       "name": "Immich",
       "link": "https://immich.jeson.im:100"
+    },
+    {
+      "key": "alist",
+      "name": "Alist",
+      "link": "https://alist.jeson.im:100"
+    },
+    {
+      "key": "hlink",
+      "name": "hlink",
+      "link": "https://hlink.jeson.im:100"
+    },
+    {
+      "key": "linknt",
+      "name": "Next-Terminal",
+      "link": "https://link.jeson.im:100"
+    },
+    {
+      "key": "mp",
+      "name": "moviepilot",
+      "link": "https://mp.jeson.im:100"
+    },
+    {
+      "key": "music",
+      "name": "navidrome",
+      "link": "https://music.jeson.im:100"
+    },
+    {
+      "key": "ql",
+      "name": "青龙面板",
+      "link": "https://ql.jeson.im:100"
+    },
+    {
+      "key": "sync",
+      "name": "Syncing",
+      "link": "https://sync.jeson.im:100"
+    },
+    {
+      "key": "pwd",
+      "name": "vaultwarden",
+      "link": "https://pwd.jeson.im:100"
+    },
+    {
+      "key": "ckcookie",
+      "name": "CookieCloud",
+      "link": "https://cookie.jeson.im:100"
+    },
+    {
+      "key": "yacd",
+      "name": "Yacd",
+      "link": "https://yacd.jeson.im:100"
+    },
+    {
+      "key": "tr",
+      "name": "Transmission",
+      "link": "https://tr.jeson.im:100"
     }
   ]
 }
