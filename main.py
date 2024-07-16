@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-from core.config import LINKS
+import threading
+
+from core.config import LINKS, refresh_config
 from core.data import SearchVo
 from nicegui import ui
 
@@ -24,4 +26,5 @@ def home():
         links()
 
 
+threading.Thread(target=refresh_config, daemon=True)
 ui.run()
