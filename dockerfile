@@ -1,9 +1,7 @@
-FROM docker.pid.im/library/python:3.11
-WORKDIR /workdir
+FROM python:3.11-alpine
+WORKDIR /app
 ENV TZ=Asia/Shanghai
-
-COPY tools.sh .
-RUN bash tools.sh init2
-
+COPY install.sh .
+RUN sh install.sh
 EXPOSE 8080
-CMD ["bash","tools.sh"]
+CMD ["sh", "start.sh"]
