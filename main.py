@@ -27,7 +27,7 @@ def home():
         link_list = LINKS if not pattern else [(name, nick, link) for name, nick, link in LINKS if pattern in name]
         if not link_list:
             return
-        with ui.row():
+        with ui.row().classes('flex-center'):
             for _, name, link in link_list:
                 with ui.link(target=link, new_tab=True):
                     ui.button(name).props('outline')
