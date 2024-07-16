@@ -28,8 +28,9 @@ def home():
         if not link_list:
             return
         with ui.row():
-            for _, nick, link in link_list:
-                ui.button(nick, on_click=lambda: ui.navigate.to(link, new_tab=True)).props('outline')
+            for _, name, link in link_list:
+                with ui.link(target=link, new_tab=True):
+                    ui.button(name).props('outline')
 
     def refresh():
         refresh_config()

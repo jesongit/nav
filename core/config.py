@@ -5,11 +5,7 @@ import requests
 
 
 def get_config():
-    proxies = {
-        # 'http': 'http://127.0.0.1:7890',
-        # 'https': 'http://127.0.0.1:7890',
-    }
-    response = requests.get('https://raw.githubusercontent.com/jesongit/nav/master/config.json', proxies=proxies)
+    response = requests.get('https://raw.githubusercontent.com/jesongit/nav/master/config.json')
     return json.loads(response.text)
 
 
