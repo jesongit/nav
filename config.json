@@ -89,6 +89,16 @@
       "key": "tr",
       "name": "Transmission",
       "link": "https://tr.jeson.im:100"
+    },
+    {
+      "key": "mcsm",
+      "name": "MCSManager",
+      "link": "https://mcsm.jeson.im:100"
+    },
+    {
+      "key": "nas",
+      "name": "QNAP",
+      "link": "https://nas.jeson.im:100"
     }
   ]
 }
