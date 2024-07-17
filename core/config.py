@@ -2,14 +2,17 @@
 # -*- coding: UTF-8 -*-
 import json
 import requests
+from nicegui import ui
 
 LINKS = []
 
 
-def refresh_config():
+def refresh_config(notify: bool = True):
     global LINKS
     data = get_config()
     LINKS = [(item['key'], item['name'], item['link']) for item in data['links']]
+    if notify:
+        ui.notify('刷新成功')
 
 
 def get_config():
