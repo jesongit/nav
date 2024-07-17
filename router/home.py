@@ -17,7 +17,6 @@ def home():
 
     @ui.refreshable
     def links():
-        print('links')
         link_list = search_link(search.value)
         if not link_list:
             return
